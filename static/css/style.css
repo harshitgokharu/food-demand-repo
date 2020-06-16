@@ -1,0 +1,90 @@
+body{
+  background-color: #333232;
+}
+
+.malign{
+  margin:auto;
+  margin-top: 15px;
+}
+
+.innercontainer{
+  background-color: #fff;
+  border-radius: 5px;
+  width: 500px;
+  /* to make sure wile expanding textarea it expands */
+  min-height: 380px;
+  height: 100%;
+}
+
+.formcontainer{
+  padding: 30px;
+}
+
+.formelement{
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  line-height: 30px;
+  padding-left: 10px;
+  font-size: 18px;
+  border: solid;
+  border-color: #D1D0D0;
+}
+
+.formelement:focus{
+  outline:none;
+  border:solid #5C5959;
+}
+
+/* When the select element is required it allows use of the :invalid CSS pseudo-class which allows you to style the select element when in its "placeholder" state. :invalid works here because of the empty value in the placeholder option. */
+select.formelement{
+  padding: 4px;
+  padding-left: 5px;
+  background-color: #fff;
+}
+
+select:invalid{
+  color: #6c757d;
+}
+
+option{
+  color: #000;
+}
+
+
+/* to make use of valign*/
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* when toggle button starts appearing */
+@media screen and (max-width:980px) {
+
+  .innercontainer{
+    width:320px;
+    min-height: 300px;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .helphead{
+    font-size: 27px;
+  }
+
+  .formelement{
+    font-size: 16px;
+  }
+
+  .formcontainer{
+    padding: 20px;
+  }
+
+  button[type="submit"]{
+    margin-top:12px;
+    height: 47px !important;
+  }
+
+}
