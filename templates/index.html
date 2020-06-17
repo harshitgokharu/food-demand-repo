@@ -10,14 +10,26 @@
   </head>
   <body>
     <div class="container">
-      <center><h2 class="helphead" style="color:#fff; margin-top:100px;">Food Demand Prediction</h2></center>
+      <center><h2 class="helphead" style="color:#fff; margin-top:100px;">Food Demand Prediction for NMIMS, Navi Mumbai</h2></center>
       <div class="malign">
         <div class="innercontainer">
+            <br>
+            <center><img src="static/logo.png" height=40px width=130px></center>
             <form class="formcontainer" action="{{ url_for('predict')}}" method="post">
                  <select name="month" class="formelement" required>
                    <option value="" hidden>Month *</option>
                    <option value= 1>January</option>
                    <option value=2>Feburary</option>
+                   <option value=3>March</option>
+                   <option value=4>April</option>
+                   <option value=5>May</option>
+                   <option value=6>June</option>
+                   <option value=7>July</option>
+                   <option value=8>August</option>
+                   <option value=9>September</option>
+                   <option value=10>October</option>
+                   <option value=11>November</option>
+                   <option value=12>December</option>
                  </select>
                  <input class="formelement" type="text" name="Total Students" placeholder="Total Students *" required />
                  <select name="holiday" class="formelement" required>
