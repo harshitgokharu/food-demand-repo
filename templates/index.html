@@ -10,11 +10,11 @@
   </head>
   <body>
     <div class="container">
-      <center><h2 class="helphead" style="color:#fff; margin-top:100px;">Food Demand Prediction for NMIMS, Navi Mumbai</h2></center>
+      <center><h2 class="helphead" style="color:#fff;">Food Demand Prediction for NMIMS, Navi Mumbai</h2></center>
       <div class="malign">
         <div class="innercontainer">
             <br>
-            <center><img src="static/logo.png" height=40px width=130px></center>
+            <center><img src="static/logo.png" height=40px width=120px></center>
             <form class="formcontainer" action="{{ url_for('predict')}}" method="post">
                  <select name="month" class="formelement" required>
                    <option value="" hidden>Month *</option>
@@ -52,7 +52,6 @@
             </form>
         </div>
         <div style="color:#fff;">
-          <br>
           {{ poha }}
           <br>
           {{ dosa }}
