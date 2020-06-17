@@ -59,6 +59,10 @@ option{
     min-height: 100vh;
 }
 
+.helphead{
+    margin-top:100px;
+}
+
 /* when toggle button starts appearing */
 @media screen and (max-width:980px) {
 
@@ -72,6 +76,7 @@ option{
 
   .helphead{
     font-size: 27px;
+    margin-top:10px;
   }
 
   .formelement{
@@ -86,5 +91,10 @@ option{
     margin-top:12px;
     height: 47px !important;
   }
+ .malign{
+  margin-top: 5px;
+ }
+
+}
 
 }
