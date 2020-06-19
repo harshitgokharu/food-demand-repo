@@ -70,7 +70,7 @@ def predict():
         for i in range(4):
             prediction[0,i] = 0
         
-    return render_template('index.html', poha='POHA: {}'.format(prediction[0,0]), dosa='DOSA: {}'.format(prediction[0,1]),tea='TEA: {}'.format(prediction[0,2]),coffee='COFFEE :{}'.format(prediction[0,3]))
+    return render_template('index.html', poha='POHA: {} plate'.format(prediction[0,0]), dosa='DOSA: {} plate'.format(prediction[0,1]),tea='TEA: {} cup'.format(prediction[0,2]),coffee='COFFEE :{} cup'.format(prediction[0,3]))
 
 
 if __name__ == "__main__":
