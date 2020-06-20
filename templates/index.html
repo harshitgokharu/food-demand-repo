@@ -11,18 +11,22 @@
         function holidayfxn(value)
         {
            if(value=="1"){
-              var d1 = document.getElementById("drop1");
-              var d2 = document.getElementById("drop2");
-              d1.setAttribute("disabled","true");
-              d2.setAttribute("disabled","true");
-              
+              $("#halfway").val($("#halfway").data(""));
+              $("#specialevents").val($("#specialevents").data(""));
+        
               var a1 = document.getElementById("add1");
               var a2 = document.getElementById("add2");
               a1.setAttribute("selected","true");
               a2.setAttribute("selected","true");
               
+              var d1 = document.getElementById("drop1");
+              var d2 = document.getElementById("drop2");
+              d1.setAttribute("disabled","true");
+              d2.setAttribute("disabled","true");
+              
            }
            else if(value=="0"){
+              
               var d1 = document.getElementById("drop1");
               var d2 = document.getElementById("drop2");
               d1.removeAttribute("disabled");
@@ -33,8 +37,9 @@
               a1.removeAttribute("selected");
               a2.removeAttribute("selected");
               
-              $("#halfway").val($("#halfway").data("default-value"));
-              $("#special_events").val($("#special_events").data("default-value"));
+              
+              
+
            }
         }
      </script>
@@ -73,7 +78,7 @@
                    <option value= 0 id="add1">No</option>
                    <option value= 1 id="drop1">Yes</option>
                  </select>
-                 <select name="special events" class="formelement" id="special_events" required>
+                 <select name="special events" class="formelement" id="specialevents" required>
                    <option value="" hidden>Special Events *</option>
                    <option value= 0 id="add2">No</option>
                    <option value=1 id="drop2">Yes</option>
